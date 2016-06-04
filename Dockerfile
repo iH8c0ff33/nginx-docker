@@ -8,4 +8,6 @@ RUN apk add --update -X $REPO nginx && \
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD proxy.conf /etc/nginx/conf.d/proxy.conf
 
+EXPOSE 80 443
+
 CMD nginx -g 'daemon off;'
