@@ -7,6 +7,7 @@ RUN apk add --update -X $REPO nginx && \
 
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD proxy.conf /etc/nginx/conf.d/proxy.conf
+ADD public /var/public
 
 EXPOSE 80 443
 
